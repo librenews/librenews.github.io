@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<article>
+  <metadata>
+    <title>XML and XSL: The Forgotten Technologies Ready for an AI Renaissance</title>
+    <author>Technology Insights</author>
+    <date>February 6, 2026</date>
+    <category>Web Technologies</category>
+  </metadata>
+  
+  <section id="introduction">
+    <heading>Introduction</heading>
+    <paragraph>
+      In the fast-paced world of web development, technologies rise and fall with remarkable speed. 
+      Among the casualties of this evolution are XML (eXtensible Markup Language) and XSL (eXtensible 
+      Stylesheet Language), once heralded as the future of data interchange and presentation on the web.
+    </paragraph>
+  </section>
+  
+  <section id="what-is-xml">
+    <heading>What is XML?</heading>
+    <paragraph>
+      XML, introduced in 1996 by the World Wide Web Consortium (W3C), is a markup language designed 
+      to store and transport data in a format that is both human-readable and machine-readable. Unlike 
+      HTML, which focuses on how data looks, XML focuses on what data is.
+    </paragraph>
+    <subsection>
+      <subheading>Key Features</subheading>
+      <list>
+        <item>Self-descriptive structure with custom tags</item>
+        <item>Platform and language independent</item>
+        <item>Strict syntax rules ensuring parsability</item>
+        <item>Support for validation through DTD and XML Schema</item>
+        <item>Hierarchical data representation</item>
+      </list>
+    </subsection>
+  </section>
+  
+  <section id="what-is-xsl">
+    <heading>What is XSL?</heading>
+    <paragraph>
+      XSL is a family of languages for transforming and rendering XML documents. It consists of three parts:
+    </paragraph>
+    <list>
+      <item><strong>XSLT (XSL Transformations):</strong> Transforms XML documents into other formats</item>
+      <item><strong>XPath:</strong> Navigates through elements and attributes in XML documents</item>
+      <item><strong>XSL-FO (XSL Formatting Objects):</strong> Formats XML for output media</item>
+    </list>
+    <paragraph>
+      XSLT allows developers to transform XML into HTML, PDF, or other XML documents, enabling 
+      separation of data from presentation—a revolutionary concept in the late 1990s.
+    </paragraph>
+  </section>
+  
+  <section id="browser-support">
+    <heading>Browser Support: A Complex History</heading>
+    <paragraph>
+      Browser support for XML and XSL has been a mixed story throughout the years. While all major 
+      browsers have supported basic XML parsing since the early 2000s, XSLT support has been inconsistent.
+    </paragraph>
+    <subsection>
+      <subheading>Historical Support</subheading>
+      <paragraph>
+        Internet Explorer was an early champion of XML, implementing XSLT support as early as IE 5.5 
+        (though with a non-standard implementation). Firefox, Chrome, Safari, and Opera all added 
+        XSLT 1.0 support in the mid-2000s.
+      </paragraph>
+    </subsection>
+    <subsection>
+      <subheading>Current State (2026)</subheading>
+      <paragraph>
+        Today, all modern browsers support:
+      </paragraph>
+      <list>
+        <item>XML parsing via the DOMParser API</item>
+        <item>XSLT 1.0 transformations (though deprecated in focus)</item>
+        <item>Client-side XML rendering with <?xml-stylesheet?> processing instructions</item>
+        <item>XPath queries through JavaScript APIs</item>
+      </list>
+      <paragraph>
+        However, XSLT 2.0 and 3.0 never gained native browser support, remaining server-side technologies.
+      </paragraph>
+    </subsection>
+  </section>
+  
+  <section id="history-rise">
+    <heading>The Rise of XML and XSL</heading>
+    <paragraph>
+      The late 1990s and early 2000s represented the golden age of XML. The technology was embraced 
+      across industries for several compelling reasons:
+    </paragraph>
+    <list>
+      <item><strong>Data Exchange:</strong> XML became the de facto standard for B2B data interchange</item>
+      <item><strong>Configuration Files:</strong> From Java to .NET, XML dominated configuration</item>
+      <item><strong>Web Services:</strong> SOAP web services relied heavily on XML</item>
+      <item><strong>Document Standards:</strong> Office Open XML, SVG, and RSS all built on XML</item>
+      <item><strong>Enterprise Adoption:</strong> Major corporations invested heavily in XML infrastructure</item>
+    </list>
+    <paragraph>
+      Microsoft, Oracle, IBM, and others built entire product lines around XML technologies. The W3C 
+      continued to develop specifications, and XML seemed poised to become the universal data format.
+    </paragraph>
+  </section>
+  
+  <section id="history-decline">
+    <heading>The Decline</heading>
+    <paragraph>
+      Despite its promising start, XML began to decline in the late 2000s and 2010s. Several factors 
+      contributed to this fall from grace:
+    </paragraph>
+    <subsection>
+      <subheading>1. JSON's Simplicity</subheading>
+      <paragraph>
+        JSON (JavaScript Object Notation) emerged as a lightweight alternative. Its simplicity, native 
+        JavaScript compatibility, and reduced verbosity made it the preferred choice for web APIs. 
+        Where XML required opening and closing tags for every element, JSON used simple key-value pairs.
+      </paragraph>
+    </subsection>
+    <subsection>
+      <subheading>2. Verbosity and Complexity</subheading>
+      <paragraph>
+        XML's strict syntax and verbose nature became liabilities. Developers grew tired of writing 
+        extensive boilerplate. The rise of agile development favored lighter-weight solutions.
+      </paragraph>
+    </subsection>
+    <subsection>
+      <subheading>3. RESTful APIs</subheading>
+      <paragraph>
+        The shift from SOAP to REST architecture further diminished XML's role. REST APIs embraced 
+        JSON, and the SOAP/XML stack fell out of favor for most new projects.
+      </paragraph>
+    </subsection>
+    <subsection>
+      <subheading>4. Frontend Revolution</subheading>
+      <paragraph>
+        The rise of single-page applications and frameworks like React, Angular, and Vue.js favored 
+        JavaScript-native data formats. XSLT's server-side rendering model clashed with client-side 
+        rendering paradigms.
+      </paragraph>
+    </subsection>
+    <subsection>
+      <subheading>5. Performance Concerns</subheading>
+      <paragraph>
+        XML parsing proved slower than JSON parsing in most implementations. Size overhead became 
+        problematic for mobile and bandwidth-constrained scenarios.
+      </paragraph>
+    </subsection>
+  </section>
+  
+  <section id="ai-renaissance">
+    <heading>Why XML Deserves a Comeback in the Age of AI</heading>
+    <paragraph>
+      The emergence of large language models and AI agents creates a compelling case for reconsidering 
+      XML and XSL. Here's why these technologies are uniquely suited for the AI era:
+    </paragraph>
+    
+    <subsection>
+      <subheading>1. Semantic Structure for AI Understanding</subheading>
+      <paragraph>
+        XML's self-descriptive nature aligns perfectly with how AI models process information. Unlike 
+        JSON's generic structure, XML tags carry semantic meaning. An AI can immediately understand 
+        that <code>&lt;author&gt;</code> contains author information and <code>&lt;publishDate&gt;</code> 
+        contains temporal data.
+      </paragraph>
+      <paragraph>
+        LLMs trained on diverse text corpora already understand XML structure from their training data. 
+        They can generate, parse, and transform XML more reliably than arbitrary JSON structures.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>2. Schema Validation and Type Safety</subheading>
+      <paragraph>
+        AI-generated content needs validation. XML Schema (XSD) provides robust type checking and 
+        validation rules. This is crucial when AI agents generate structured data—you can validate 
+        that outputs conform to expected formats before processing them further.
+      </paragraph>
+      <paragraph>
+        JSON Schema exists but lacks the maturity and tooling ecosystem that XML Schema has built 
+        over decades.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>3. Powerful Querying with XPath</subheading>
+      <paragraph>
+        XPath provides a sophisticated query language for navigating XML documents. AI agents can use 
+        XPath expressions to precisely extract information from complex documents. This is far more 
+        expressive than JSON's dot notation or JSONPath.
+      </paragraph>
+      <paragraph>
+        Example: <code>//section[@id='introduction']/paragraph[1]</code> precisely identifies a 
+        specific paragraph, something AI agents can generate and use programmatically.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>4. Transformation Pipelines with XSLT</subheading>
+      <paragraph>
+        XSLT excels at transforming structured data—exactly what AI workflows often require. An AI 
+        could generate data in one XML format, and XSLT could transform it into multiple output 
+        formats without the AI needing to understand each target format.
+      </paragraph>
+      <paragraph>
+        This separation of concerns is powerful: the AI focuses on content generation, while XSLT 
+        handles presentation. It's declarative programming that AI can reason about.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>5. Mixed Content and Document-Centric Data</subheading>
+      <paragraph>
+        AI generates long-form content—articles, reports, documentation. XML handles mixed content 
+        (text with embedded markup) naturally, something JSON struggles with. You can have paragraphs 
+        containing <code>&lt;emphasis&gt;</code> or <code>&lt;citation&gt;</code> tags inline, 
+        preserving semantic meaning.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>6. Standardized, Battle-Tested Tooling</subheading>
+      <paragraph>
+        Decades of XML tooling exist across every platform. SAX parsers, DOM APIs, XSLT processors, 
+        and validators are mature and reliable. AI systems benefit from this stability rather than 
+        dealing with the fragmentation in modern JavaScript-centric tooling.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>7. Human-AI Collaboration</subheading>
+      <paragraph>
+        XML's readability aids human-AI collaboration. When developers need to review or modify 
+        AI-generated structured data, XML's explicit tag names are more understandable than cryptic 
+        JSON keys. Comments, processing instructions, and namespaces provide rich metadata.
+      </paragraph>
+    </subsection>
+    
+    <subsection>
+      <subheading>8. Interoperability Across AI Systems</subheading>
+      <paragraph>
+        As we move toward multi-agent AI systems, standardized data exchange becomes critical. XML's 
+        namespace mechanism prevents naming conflicts when different AI agents contribute to the same 
+        document. Its extensibility allows agents to add their own metadata without breaking existing 
+        processors.
+      </paragraph>
+    </subsection>
+  </section>
+  
+  <section id="conclusion">
+    <heading>Conclusion</heading>
+    <paragraph>
+      XML and XSL were ahead of their time. They solved problems that the web of the 2000s wasn't 
+      quite ready for—semantic data representation, transformation pipelines, and strict validation. 
+      But in the age of AI, these aren't luxuries; they're necessities.
+    </paragraph>
+    <paragraph>
+      As AI agents become more prevalent in generating, transforming, and consuming structured data, 
+      the industry may rediscover that XML's "verbose" nature is actually explicit semantic clarity. 
+      Its "complexity" is actually sophisticated tooling for real-world problems. And its "declining" 
+      usage represents an opportunity for forward-thinking developers to leverage battle-tested 
+      technology for cutting-edge applications.
+    </paragraph>
+    <paragraph>
+      The future might not look exactly like the XML-everywhere vision of the early 2000s, but there's 
+      a strong case that XML and XSL deserve a renaissance as foundational technologies for AI-driven 
+      systems. Sometimes, the old ways become new again.
+    </paragraph>
+  </section>
+  
+  <footer>
+    <paragraph>
+      This article itself is a demonstration: written in XML and rendered with XSL in your browser. 
+      No React, no build tools, no JavaScript frameworks—just semantic markup and transformation, 
+      working together as they were designed to do.
+    </paragraph>
+  </footer>
+</article>
